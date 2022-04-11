@@ -31,7 +31,7 @@
 > **git branch <branch_name>**:  Create a new branch.
 > 
 > **git branch -a/--list**:  List all remote or local branches.
-> 
+>
 > **git branch -d <branch_name>**: Delete a branch.
 > 
 > **git rm --cached <file name>**: To remove a file from the working index (cached).
@@ -46,3 +46,16 @@
 # > difference betwenn https and ssh
  
 
+> Https and SSH are two protocols used to identify yourself. There is not such a big diference between them. The main difference is that
+>
+>  https is less complicated and faster than ssh. But everytime you use it, you'll be asking to enter your username and passowrd, which .
+>
+> isn't always fun. SSH on the other hand is hard to configure but more secure and once you generate your ssh key pair and add it to your 
+>
+> GitHub account, GitHub will reconize it everytime you connect. If however you want to keep it with https without entering your username  
+>
+> and password each time, you should create a Credential Helper Manage with the command :  git config --global credential.helper cache . 
+>
+> Git will generate a personnal access token for you and there will be no need to enter your 
+
+> username and passowrd again. 
