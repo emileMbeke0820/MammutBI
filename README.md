@@ -63,6 +63,11 @@
 > 6. To use your token to access repositories from the command line, select repo. You can also select the scopes, or permissions, you'd like to grant >    this token.
 > 7. Click Generate token , GitHub will confirm it. That's all. 
 > According to GitHub-documentation, HTTPS is in some cases a little faster than SSH, especially over high-latency connections.
+> Git Credential Manager (GCM) is another way to store your credentials securely and connect to GitHub over HTTPS. With GCM, you don't have to 
+> manually create and store a PAT, as GCM manages authentication on your behalf, including 2FA (two-factor authentication).
+
+
+
 
 > # SSH
 > To use public-key authentication, You have to generate a keypair (or "public key"), then add it to your GitHub account.
