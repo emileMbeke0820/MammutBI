@@ -1,6 +1,8 @@
 # Repo für den Einsatz bei Mammut
 
 
+<<<<<<< substasks
+
 
 > # Substask 1, Some basics Git commands.
 >
@@ -43,7 +45,9 @@
 > **git rm -r -f <file name>**: To delete an entire directory (force).
 
 
-> # difference betwenn https and ssh
+
+# > difference betwenn https and ssh
+
  
 > # HTTPS
 > It uses password authentication for pushing. 
