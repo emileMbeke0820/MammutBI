@@ -1,6 +1,11 @@
 # Repo für den Einsatz bei Mammut
 
 
+<<<<<<< substasks
+
+
+=======
+
 
 > # Substask 1, Some basics Git commands.
 >
@@ -44,5 +49,6 @@
 
 
 # > difference betwenn https and ssh
+>>>>>>> main
  
 
