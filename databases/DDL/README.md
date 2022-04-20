@@ -1,4 +1,4 @@
-# SQL Data Definition Language (DDL)
+### SQL Data Definition Language (DDL)
   Data definition allows the user to define new tables and elements.
  
 > # CREATE - with the CREATE statement you can create a new table in an existing database.
@@ -8,7 +8,7 @@
 > # TRUNCATE - with the TRUNCATE statement, you can delete all the content in the table, but keep the actual table intact and ready for further use
 >
 
-# SQL Data Manipulation Language (DML)
+### SQL Data Manipulation Language (DML)
   Data manipulation is essential for SQL tables - it allows you to modify an already created table with new information, update the already existing values or delete them. 
 >
 > # SQL INSERT
@@ -22,7 +22,7 @@
 >   With the DELETE statement you can remove unneeded rows from a table.
 >
 
-# SQL Data Control Language (DCL)
+### SQL Data Control Language (DCL)
   SQL allows the user to define the access each of the table users can have to the actual table.
 >  
 > # GRANT 
