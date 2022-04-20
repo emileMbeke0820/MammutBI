@@ -1,17 +1,15 @@
--- dev_playground.students definition
+-- dev_playground.employee definition
 
 -- Drop table
 
--- DROP TABLE dev_playground.students;
+-- DROP TABLE dev_playground.employee;
 
--- TRUNCATE TABLE dev_playground.students;
-
-CREATE TABLE dev_playground.students (
-	student_id int4 NOT NULL,
-	first_name varchar(100) NOT NULL,
-	last_name varchar(100) NOT NULL,
+CREATE TABLE dev_playground.employee (
+	employee_id int4 NOT NULL,
+	"name" varchar(100) NOT NULL,
 	age int4 NOT NULL,
-	adress varchar(100) NOT NULL,
-	semester int4 NOT NULL,
-	CONSTRAINT students_pkey PRIMARY KEY (student_id)
+	address varchar(100) NULL,
+	salary float4 NULL,
+	company varchar(100) NULL,
+	CONSTRAINT employee_pkey PRIMARY KEY (employee_id)
 );
