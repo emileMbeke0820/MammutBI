@@ -1,7 +1,7 @@
-# Repo für den Einsatz bei Mammut
+### Repo für den Einsatz bei Mammut
 
 
-<<<<<<< substasks
+
 
 
 > # Substask 1, Some basics Git commands.
@@ -46,17 +46,17 @@
 
 
 
-# > difference betwenn https and ssh
+> ### difference betwenn https and ssh
 
  
-> # HTTPS
+> ### HTTPS
 > It uses password authentication for pushing. 
 > You will be asking to enter your GitHub passowrd every time you push. It's possible for Git to remember your password for a few minute.
 > It is been said that HTTPS is less secure than SSH because you have to store your GitHub Account permanently, which is very risky and 
 > can be hacked. 
 > To avoid using your password everytime you push, you have to enebale two-factor authentication and use personal access token.
 
-> # personal access token
+> ### personal access token
 > Personal access tokens (PATs) are an alternative to using passwords for authentication to GitHub when using the GitHub API or the command line.
 > 1. The first step is to verify your email if not verified yet.
 > 2. Click your profile photo then Settings
@@ -73,7 +73,7 @@
 
 
 
-> # SSH
+> ### SSH
 > To use public-key authentication, You have to generate a keypair (or "public key"), then add it to your GitHub account.
 > Using keys is more secure than passwords, since you can add many to the same account 
 >(for example, a key for every computer you use GitHub from). The private keys on your computer can be protected with passphrases
