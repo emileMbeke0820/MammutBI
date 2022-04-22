@@ -4,7 +4,7 @@
 
 
 
-> # Substask 1, Some basics Git commands.
+> ### Substask 1, Some basics Git commands.
 >
 > **git clone [url]**: Clone a repository from a remote.
 > 
