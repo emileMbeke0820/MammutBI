@@ -83,3 +83,15 @@
 > You can follow 
 > [this link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 > to generate a ssk-key.
+
+
+> ### ACID Properties ==> Autocommit ON/OFF.
+> In DBMS, to ensure we have exclusive Access to certain Information when we perform a task, we use or shall use transaction.
+> Transaction is a set of operations that must all be completed. It follow one principle known by the acronym ACID. 
+> The ACID propreties required that the transaction must be:
+> - Atomic : The Transaction is indivisible. It takes place all at once or not.
+> - Consistent: Data must be consistent before and after the transaction. The Integrity rule defining by the databases can't be violated.
+> - Isolated: While a transaction is taking place, nothing else can access the data involved or modified it.
+> - Durable: the change in the transaction must be written in the databases. 
+
+
