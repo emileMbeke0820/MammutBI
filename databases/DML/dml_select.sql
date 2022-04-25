@@ -5,3 +5,4 @@ FROM dev_playground.employee;
 -- If you want to print the whole table
 
 SELECT * FROM dev_playground.employee;
+
