@@ -92,6 +92,6 @@
 > - Atomic : The Transaction is indivisible. It takes place all at once or not.
 > - Consistent: Data must be consistent before and after the transaction. The Integrity rule defining by the databases can't be violated.
 > - Isolated: While a transaction is taking place, nothing else can access the data involved or modified it.
-> - Durable: the change in the transaction must be written in the databases. 
+> - Durable: the change in the transaction must be written in the databases and must remain there as long as possible. 
 
 
