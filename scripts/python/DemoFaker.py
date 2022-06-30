@@ -1,18 +1,30 @@
+import json
 from faker import Faker
 
-fake_data = Faker()
+fake = Faker()
 
 
-def createAndSaveData():
-    table = []
-    for x in range(10):
-        table.append({"a": fake_data.user_name(), "b": fake_data.address()})
-    return table
+def createYourListe(profile):
+    customer = {}
+    for i in range(0, profile):
+        customer[i] = {}
+        customer[i]['id'] = fake.random_number(digits=3)
+        customer[i]['name'] = fake.name()
+        customer[i]['address'] = fake.address()
+        customer[i]['email'] = str(fake.email())
+        customer[i]['phone'] = str(fake.phone_number())
+        customer[i]['traceId_tok'] = fake.password(length=40, special_chars=False, upper_case=True)
+        customer[i]['customerId_tok'] = fake.uuid4()
+        customer[i]['timestamp'] = fake.iso8601()
 
+    with open('customer.json', 'w') as file:
+        json.dump(customer, file)
 
-# Dictionnary kann in List umgewandelt werden!
-# Jasoondump machen
+    print("File has been created.")
+
 
 if __name__ == '__main__':
-    dataset = createAndSaveData()
-    print(dataset)
+    zahl = int(input("Enter the number of records:"))
+    createYourListe(zahl)
+
+
