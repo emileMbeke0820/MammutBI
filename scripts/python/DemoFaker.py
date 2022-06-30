@@ -7,26 +7,32 @@ fake = Faker()
 
 
 def createYourListe(profile):
-    customer = {}
+    customer = []
     for i in range(0, profile):
-        customer[i] = {}
-        customer[i]['id'] = fake.random_number(digits=3)
-        customer[i]['name'] = fake.name()
-        customer[i]['address'] = fake.address()
-        customer[i]['email'] = str(fake.email())
-        customer[i]['phone'] = str(fake.phone_number())
-        customer[i]['traceId_tok'] = fake.password(length=40, special_chars=False, upper_case=True)
-        customer[i]['customerId_tok'] = fake.uuid4()
-        customer[i]['timestamp'] = fake.iso8601()
+        kunde = {}
+        kunde['id'] = fake.random_number(digits=3)
+        kunde['name'] = fake.name()
+        kunde['address'] = fake.address()
+        kunde['email'] = str(fake.email())
+        kunde['phone'] = str(fake.phone_number())
+        kunde['traceId_tok'] = fake.password(length=40, special_chars=False, upper_case=True)
+        kunde['customerId_tok'] = fake.uuid4()
+        kunde['timestamp'] = fake.iso8601()
+        customer.append(kunde)
 
     with open('customer.json', 'w') as file:
-        json.dump(customer, file)
+        file.write("[")
+        attachment = ",\n"
+        for a,d in enumerate(customer):
+            if(a == len(customer)-1):
+                attachment = "\n"
+            file.write(json.dumps(d) + attachment)
+        file.write("]")
 
 
-def write_to_csv():
-    with open('kunde.csv', 'w') as file:
-        writer = csv.DictWriter(createYourListe(5), file)
-        file.write(writer)
+
+
+
 
 
 
@@ -34,6 +40,6 @@ def write_to_csv():
 
 
 if __name__ == '__main__':
-    write_to_csv()
+    createYourListe(4)
 
 
