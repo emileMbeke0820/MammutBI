@@ -1,7 +1,9 @@
+import csv
 import json
 from faker import Faker
 
 fake = Faker()
+
 
 
 def createYourListe(profile):
@@ -20,11 +22,18 @@ def createYourListe(profile):
     with open('customer.json', 'w') as file:
         json.dump(customer, file)
 
+
+def write_to_csv():
+    with open('kunde.csv', 'w') as file:
+        writer = csv.DictWriter(createYourListe(5), file)
+        file.write(writer)
+
+
+
     print("File has been created.")
 
 
 if __name__ == '__main__':
-    zahl = int(input("Enter the number of records:"))
-    createYourListe(zahl)
+    write_to_csv()
 
 
