@@ -20,14 +20,27 @@ def createYourListe(profile):
         kunde['timestamp'] = fake.iso8601()
         customer.append(kunde)
 
-    with open('customer.json', 'w') as file:
-        file.write("[")
-        attachment = ",\n"
-        for a,d in enumerate(customer):
-            if(a == len(customer)-1):
-                attachment = "\n"
-            file.write(json.dumps(d) + attachment)
-        file.write("]")
+    # with open('customer.json', 'w') as file:
+    #     file.write("[")
+    #     attachment = ",\n"
+    #     for a,d in enumerate(customer):
+    #         if(a == len(customer)-1):
+    #             attachment = "\n"
+    #         file.write(json.dumps(d) + attachment)
+    #     file.write("]")
+
+    keys = ["id", "name", "address", "email", "phone", "traceId_tok", "customerId_tok", "timestamp"]
+    with open('profile.csv', 'w') as file:
+        writer = csv.DictWriter(file, fieldnames=keys)
+        writer.writeheader()
+        writer.writerows(customer)
+
+
+
+
+
+
+
 
 
 
@@ -40,6 +53,6 @@ def createYourListe(profile):
 
 
 if __name__ == '__main__':
-    createYourListe(4)
+    createYourListe(20)
 
 
